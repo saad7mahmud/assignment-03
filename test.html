@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with DaisyUI</title>
+    <!-- Include Tailwind CSS and DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-black p-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="hidden md:flex space-x-4">
+            <a href="#" class="text-white">Home</a>
+            <a href="#" class="text-white">About</a>
+            <a href="#" class="text-white">Services</a>
+            <a href="#" class="text-white">Contact</a>
+          </div>
+          <div>
+            <!-- Replace the logo image below with your logo -->
+            <a href="#" class="text-white font-bold text-lg">Your Logo</a>
+          </div>
+          <div class="md:hidden">
+            <!-- Mobile menu button -->
+            <button
+              class="text-white focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Add your content here -->
+  </body>
+</html>
