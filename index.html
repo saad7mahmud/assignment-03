@@ -20,48 +20,81 @@
   </head>
   <body>
     <header>
-      <nav
-        class="bg-white md:bg-red-400 lg:bg-red-400 flex text-white items-center justify-center px-0 md:px-5 lg:px-5 py-4 rounded-full m-6"
-      >
-        <div class="flex-1 hidden md:block lg:block">
-          <ul class="flex gap-5 text-lg">
-            <li class="hover:text-gray-300"><a href="">Home</a></li>
-            <li class="hover:text-gray-300"><a href="">About Us</a></li>
-            <li class="hover:text-gray-300"><a href="">Shop</a></li>
-            <li class="hover:text-gray-300"><a href="">All Fruits</a></li>
-          </ul>
-        </div>
-        <!-- Logo Middle -->
+      <header>
         <div
-          class="flex items-center gap-1 lg:justify-center md:justify-center flex-1 justify-center"
+          class="navbar flex justify-between md:bg-red-400 lg:bg-red-400 rounded-full m-5 md:m-20 lg:m-20 w-auto"
         >
-          <img src="./images/logo.png" alt="" />
-          <span
-            class="font-semibold text-2xl md:text-2xl lg:text-4xl text-black md:text-white lg:text-white"
-            >Fruit Burst</span
-          >
-        </div>
-        <div class="flex-1 flex justify-end">
-          <input
-            class="rounded-full pt-2 ps-4 pb-2 hidden md:block lg:block"
-            type="text"
-            placeholder="Search Here"
-          />
-        </div>
-        <!-- toggle button -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="text-white menu menu-horizontal px-1">
+              <li class="hover:text-gray-300"><a href="">Home</a></li>
+              <li class="hover:text-gray-300"><a href="">About Us</a></li>
+              <li class="hover:text-gray-300"><a href="">Shop</a></li>
+              <li class="hover:text-gray-300"><a href="">All Fruits</a></li>
+            </ul>
+          </div>
 
-        <div class="block md:hidden lg:hidden">
-          <button class="flex flex-col m-1">
-            <div class="w-6 h-1 bg-black md:bg-white lg:bg-white"></div>
-            <div class="my-1 w-6 h-1 bg-black md:bg-white lg:bg-white"></div>
-            <div class="w-6 h-1 bg-black md:bg-white lg:bg-white"></div>
-          </button>
+          <div
+            class="navbar-start gap-3 flex lg:justify-center md:justify-start"
+          >
+            <img src="./images/logo.png" alt="" />
+            <span
+              class="font-semibold text-xl md:text-2xl lg:text-4xl text-black md:text-white lg:text-white"
+              >Fruit Burst</span
+            >
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <textarea
+              class="rounded-full px-8 py-3 resize-none menu menu-horizontal placeholder:text-start overflow-hidden z-40"
+              placeholder="Search here"
+              name=""
+              id=""
+              cols="30"
+              rows="1"
+            ></textarea>
+          </div>
+
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="z-50 text-white -ms-[255px] menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box flex items-center bg-gray-600"
+            >
+              <li class="hover:text-gray-300"><a href="">Home</a></li>
+              <li class="hover:text-gray-300"><a href="">About Us</a></li>
+              <li class="hover:text-gray-300"><a href="">Shop</a></li>
+              <li class="hover:text-gray-300"><a href="">All Fruits</a></li>
+              <textarea
+                class="rounded-full px-10 resize-none px-8 py-3"
+                placeholder="search here"
+                name=""
+                id=""
+                cols="30"
+                rows="1"
+              ></textarea>
+            </ul>
+          </div>
         </div>
-      </nav>
+      </header>
     </header>
     <main>
       <!-- banner carousel -->
-      <section>
+      <section class="z-10">
         <div class="carousel w-[90%] flex mx-auto">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="./images/banner1.png" class="w-full brightness-50 z-10" />
